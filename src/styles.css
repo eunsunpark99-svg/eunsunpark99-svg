@@ -65,6 +65,27 @@ main {
   font-weight: 800;
 }
 
+.brand svg,
+.primary-button svg,
+.ghost-button svg {
+  flex: 0 0 auto;
+  padding: 3px;
+  border-radius: 7px;
+  background: rgba(151, 173, 170, 0.12);
+  color: #9fb4b1;
+  stroke-width: 1.8;
+}
+
+.primary-button svg {
+  background: rgba(16, 17, 21, 0.07);
+  color: #667270;
+}
+
+.contact .primary-button svg {
+  background: rgba(255, 255, 255, 0.1);
+  color: #b9c7c4;
+}
+
 .nav-links {
   gap: clamp(16px, 3vw, 36px);
   color: #c5cbd6;
@@ -159,7 +180,7 @@ h1 {
   margin: 0;
   overflow: hidden;
   border: 10px solid #e7e5d6;
-  border-radius: 2px;
+  border-radius: 12px;
   background: #dad8c5;
   color: #080b0f;
   contain: layout paint;
@@ -272,7 +293,7 @@ h1 {
 }
 
 .poster-title strong:first-of-type {
-  color: #d62234;
+  color: #a84f58;
 }
 
 .date-label {
@@ -294,7 +315,9 @@ h1 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 0;
+  overflow: hidden;
   color: #0a0d12;
+  border-radius: 0 0 14px 14px;
   background: #e7e5d6;
 }
 
@@ -326,20 +349,20 @@ h1 {
 
 .arrow-left {
   border-top: 7px solid transparent;
-  border-right: 12px solid #d62234;
+  border-right: 12px solid #a45e5f;
   border-bottom: 7px solid transparent;
 }
 
 .arrow-right {
   border-top: 7px solid transparent;
   border-bottom: 7px solid transparent;
-  border-left: 12px solid #d62234;
+  border-left: 12px solid #a45e5f;
 }
 
 .current-page-button {
   min-width: 74px;
   padding: 0;
-  color: #d62234 !important;
+  color: #9d5b5c !important;
   text-align: center;
   font-weight: 950 !important;
 }
@@ -347,7 +370,7 @@ h1 {
 .slide-controls button:hover,
 .slide-numbers button:hover,
 .slide-numbers button.active {
-  color: #d62234;
+  color: #9d5b5c;
 }
 
 .slide-numbers {
@@ -363,15 +386,15 @@ h1 {
   min-width: 44px;
   height: 34px;
   border: 1px solid rgba(10, 13, 18, 0.28);
-  border-radius: 2px;
+  border-radius: 10px;
   background: rgba(255, 255, 255, 0.72);
   font-size: 1rem;
   font-weight: 900;
 }
 
 .slide-numbers button.active {
-  border-color: #d62234;
-  background: #fff4f0;
+  border-color: #a45e5f;
+  background: #f4ebe4;
 }
 
 .bone {
@@ -493,15 +516,15 @@ h2 {
 }
 
 .teal {
-  --accent: rgba(99, 214, 207, 0.52);
+  --accent: rgba(117, 175, 171, 0.3);
 }
 
 .coral {
-  --accent: rgba(255, 141, 107, 0.52);
+  --accent: rgba(190, 130, 112, 0.28);
 }
 
 .gold {
-  --accent: rgba(232, 194, 92, 0.5);
+  --accent: rgba(187, 165, 104, 0.3);
 }
 
 .thumb span {
@@ -542,9 +565,14 @@ h2 {
   width: 42px;
   height: 42px;
   place-items: center;
-  border-radius: 50%;
-  background: #f5faf9;
-  color: #101115;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 10px;
+  background: rgba(245, 250, 249, 0.86);
+  color: #5f6d6a;
+}
+
+.work-card-body a svg {
+  stroke-width: 1.8;
 }
 
 .work-desc {
@@ -566,9 +594,13 @@ h2 {
   height: 48px;
   margin-bottom: 24px;
   place-items: center;
-  border-radius: 8px;
-  background: rgba(99, 214, 207, 0.14);
-  color: #63d6cf;
+  border-radius: 10px;
+  background: rgba(132, 170, 166, 0.12);
+  color: #89aaa6;
+}
+
+.icon-box svg {
+  stroke-width: 1.8;
 }
 
 .process-item p {
