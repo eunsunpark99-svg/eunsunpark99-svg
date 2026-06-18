@@ -116,17 +116,21 @@ function HeroSlideshow() {
     <div className="neolook-hero" aria-label="Featured artwork slideshow">
       <figure className={`artwork-panel ${currentWork.palette}`}>
         <div className="artwork-image" aria-hidden="true" />
+
         <figcaption>
           <div className="artist-label">
             <strong>Seo Doi</strong>
             <span>{currentWork.artist}</span>
           </div>
+
           <p>{currentWork.title}</p>
+
           <div className="poster-title">
             <span>2026</span>
             <strong>OCI YOUNG</strong>
             <strong>CREATIVES</strong>
           </div>
+
           <div className="date-label">
             <strong>{currentWork.date}</strong>
             <span>ARTISTOUR</span>
